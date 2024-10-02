@@ -197,7 +197,6 @@ bool Game::isAIEnabled()
 
 void Game::AIEnable()
 {
-#ifndef AI_DISABLED
     if(!isAIEnabled())
     {
 
@@ -213,18 +212,15 @@ void Game::AIEnable()
             }
         }
     }
-#endif
 }
 
 void Game::AIDisable()
 {
-#ifndef AI_DISABLED
     if(isAIEnabled())
     {
         delete ai;
         ai = nullptr;
     }
-#endif
 }
 
 void Game::prepareNewRound()
