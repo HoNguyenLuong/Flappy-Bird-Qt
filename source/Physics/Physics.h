@@ -44,7 +44,7 @@ public:
         qreal height;
     }rectangle;
 
-private:
+public:
     int pipeCriticX;
 
     qreal speedfactor;
@@ -65,7 +65,7 @@ private:
 
     class QTransform *_transform;
 
-protected:
+public:
     class Game *game;
 
     class Bird *bird;
