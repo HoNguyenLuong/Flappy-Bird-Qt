@@ -67,7 +67,7 @@ public:
 
    bool aiPlays;
 
-private:
+public:
     bool soundEnabled;
     bool gameFinished, gameStarted;
     bool gameActuallyStarted;
@@ -89,7 +89,7 @@ private:
 
     void loadConfiguration();
 
-protected:
+public:
     class QSettings *config;
     class QSettings *registry;
 
